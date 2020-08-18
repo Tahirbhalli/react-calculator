@@ -7,5 +7,7 @@ input {
 
 button {
   background: greenyellow !important;
+  font-size: 50px !important;
+  font-weight: bolder !important;
   height: 100px;
 }

@@ -1,0 +1,11 @@
+input {
+  background-color: aqua;
+  font-size: xx-large !important;
+  height: 50px;
+  text-align: right;
+}
+
+button {
+  background: greenyellow !important;
+  height: 100px;
+}

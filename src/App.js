@@ -4,7 +4,9 @@ import './App.css';
 function App() {
   return (
     <div>
-      hello
+
+      <h1>React Calculator</h1>
+      <input placeholder="enter the number" />
     </div>
   );
 }

@@ -20,6 +20,15 @@ export default class DisplayPannel extends Component {
       operator: null,
       operatorState: false,
     };
+    this.inputRef = React.createRef();
+  }
+
+  componentDidMount() {
+    this.inputRef.current.focus();
+  }
+
+  componentDidUpdate() {
+    this.inputRef.current.focus();
   }
 
   removeDigit() {
@@ -108,7 +117,7 @@ export default class DisplayPannel extends Component {
   render() {
     return (
       <div className="row">
-        <input className="col-12 border-0 p-3" type="text" placeholder="enter the number" value={this.state.activeNumber} />
+        <input className="col-12 border-0 p-3" type="text" placeholder="enter the number" value={this.state.activeNumber} ref={this.inputRef} />
         <Number number={1} triggerParent={this.setNumber} />
         <Number number={2} triggerParent={this.setNumber} />
         <Number number={3} triggerParent={this.setNumber} />

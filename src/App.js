@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import Display from './component/Display';
+import ButtonPanel from './component/ButtonPanel';
 
 function App() {
   return (
     <div>
-
-      <h1>React Calculator</h1>
-      <input placeholder="enter the number" />
+      <Display value="0" />
+      <ButtonPanel />
     </div>
   );
 }

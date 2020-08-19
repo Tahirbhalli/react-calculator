@@ -6,7 +6,7 @@ import ButtonPanel from './component/ButtonPanel';
 function App() {
   return (
     <div className="grid">
-      <Display value="0" />
+      <Display result="0" />
       <ButtonPanel />
     </div>
   );

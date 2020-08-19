@@ -3,26 +3,26 @@ import Button from './Button';
 
 export default function ButtonPanel() {
   return (
-    <div>
-      <Button name="AC" />
-      <Button name="+/-" />
-      <Button name="%" />
+    <>
+      <Button name="AC" color="simple" />
+      <Button name="+/-" color="simple" />
+      <Button name="%" color="simple" />
       <Button name="/" />
-      <Button name="7" />
-      <Button name="8" />
-      <Button name="9" />
-      <Button name="X" />
-      <Button name="4" />
-      <Button name="5" />
-      <Button name="6" />
+      <Button name="7" color="simple" />
+      <Button name="8" color="simple" />
+      <Button name="9" color="simple" />
+      <Button name="X"/>
+      <Button name="4" color="simple" />
+      <Button name="5" color="simple" />
+      <Button name="6" color="simple" />
       <Button name="-" />
-      <Button name="1" />
-      <Button name="2" />
-      <Button name="3" />
-      <Button name="+" />
-      <Button name="0" />
-      <Button name="." />
-      <Button name="=" />
-    </div>
+      <Button name="1" color="simple" />
+      <Button name="2" color="simple" />
+      <Button name="3" color="simple" />
+      <Button name="+"/>
+      <Button name="0" color="simple" wide={true} />
+      <Button name="." color="simple" />
+      <Button name="="/>
+    </>
   );
 }

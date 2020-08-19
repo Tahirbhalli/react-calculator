@@ -1,30 +1,10 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/destructuring-assignment */
-// /* eslint-disable react/prop-types */
-// import React, { Component } from 'react';
+/* eslint-disable react/prop-types */
+/* eslint-disable react/button-has-type */
+import React from 'react';
 
-// export default class Number extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       number: this.props.number,
-//     };
-//   }
-
-//   render() {
-//     return (
-//       <button className="btn col-3" onClick={() => this.props.triggerParent(this.state.number)}>{this.state.number}</button>
-//     );
-//   }
-// }
-import React from 'react'
-
-export default function Number() {
+export default function Number(props) {
   return (
-    <div>
-      
-    </div>
-  )
+    <button className="btn col-3" onClick={() => props.triggerParent(props.number)}>{props.number}</button>
+  );
 }

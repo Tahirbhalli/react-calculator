@@ -12,7 +12,7 @@ This is a Simple calculator that is build with reactjs, you can perform operatio
 - React
 
 ## Live Link
-
+- [Live Link](https://cal-reac.herokuapp.com/)
 
 👤 **Author**
 

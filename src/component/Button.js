@@ -5,6 +5,6 @@ import React from 'react';
 
 export default function Button(props) {
   return (
-    <button className="">{props.name}</button>
+    <button className={`${props.wide} ${props.color}`}>{props.name}</button>
   );
 }

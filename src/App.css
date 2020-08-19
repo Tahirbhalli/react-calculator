@@ -1,3 +1,35 @@
-body {
-  background-color: grey;
+#root {
+  width: 700px;
+}
+
+input {
+  background: gray;
+  color: white;
+  font-weight: bold;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding: 10px;
+  height: 100px;
+  width: 676px;
+  text-align: right;
+}
+
+button {
+  color: black;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.double {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.orange {
+  background-color: orange;
 }

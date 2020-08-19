@@ -4,8 +4,6 @@ import React from 'react';
 
 export default function Display(props) {
   return (
-    <div>
-      <input placeholder="enter the number" value={props.value} />
-    </div>
+    <input placeholder="enter the number" value={props.value} />
   );
 }

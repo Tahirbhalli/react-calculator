@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 export default function Button(props) {
   if (props.wide) {
     return (
+      // eslint-disable-next-line no-useless-concat
       <button className={'double ' + `${props.color}`}>{props.name}</button>
     );
   }

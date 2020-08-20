@@ -5,20 +5,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Button(props) {
+  const { handleclick } = props;
   if (props.wide) {
     return (
       // eslint-disable-next-line no-useless-concat
-      <button className={'double ' + `${props.color}`}>{props.name}</button>
+      <button className={'double ' + `${props.color}`} onClick={() => handleclick(props.name)}>{props.name}</button>
     );
   }
   return (
-    <button className={`${props.color}`}>{props.name}</button>
+    <button className={`${props.color}`} onClick={() => handleclick(props.name)}>{props.name}</button>
   );
 }
 Button.prototype = {
   name: PropTypes.string,
   wide: PropTypes.bool,
-  color: PropTypes.string,
 };
 
 Button.defaultProps = {

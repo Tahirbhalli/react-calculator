@@ -12,11 +12,13 @@ const operate = (num1, num2, operation) => {
       return First.minus(Second);
     case 'x':
       return First.times(Second);
-    case '÷':
-      if (Second === '0') {
+    case '/':
+      if (Second === 0) {
         return 'undefined';
       }
       return First.div(Second);
+    case '%':
+      return First % Second;
     default:
       return First.times(Second.times(0.01));
   }

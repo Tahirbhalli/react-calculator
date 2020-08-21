@@ -14,11 +14,11 @@ const operate = (num1, num2, operation) => {
       return First.times(Second);
     case '/':
       if (Second === 0) {
-        return 'undefined';
+        return 'cannot divide by zero';
       }
       return First.div(Second);
     case '%':
-      return First % Second;
+      return First / 100;
     default:
       return First.times(Second.times(0.01));
   }

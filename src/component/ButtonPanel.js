@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
 export default function ButtonPanel(props) {
@@ -28,3 +28,9 @@ export default function ButtonPanel(props) {
     </>
   );
 }
+ButtonPanel.propTypes = {
+  handleclick: PropTypes.func,
+};
+ButtonPanel.defaultProps = {
+  handleclick: null,
+};

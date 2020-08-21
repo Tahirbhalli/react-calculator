@@ -39,9 +39,7 @@ const calculate = (object, buttonName) => {
       total = '/';
       break;
     case '%':
-      next = total;
-      operation = '%';
-      total = '%';
+      total = operate(parseFloat(total), parseFloat(total), '%');
       break;
     case '=':
       if (operation && !['+', '-', 'x', '/', '%'].includes(total) && next) {

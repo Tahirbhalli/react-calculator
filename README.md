@@ -1,5 +1,5 @@
 ## React Calculator
-![screenshot](./screen.png)
+![screenshot](./screen1.png)
 
 
 This is a Simple calculator that is build with reactjs, you can perform operations like addition subtraction etc, Main focused is on UI.

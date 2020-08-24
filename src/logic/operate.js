@@ -13,10 +13,12 @@ const operate = (num1, num2, operation) => {
     case 'x':
       return First.times(Second);
     case '/':
-      if (Second === 0) {
-        return 'cannot divide by zero';
+      try {
+        const a = First.div(Second);
+        return a;
+      } catch (error) {
+        return 'error';
       }
-      return First.div(Second);
     case '%':
       return First / 100;
     default:
